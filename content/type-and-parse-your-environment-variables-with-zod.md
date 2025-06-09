@@ -1,0 +1,92 @@
+---
+title: 'Type and parse your environment variables with Zod'
+date: '2023-03-19'
+tags: 'coding, next, typescript, zod'
+description: 'If you ever worked with environment variables in a TypeScript project, you probably know that it can be a bit of a pain to handle them.'
+cover: '/type-and-parse-your-environment-variables-with-zod.webp'
+alt: 'Code on a screen'
+---
+
+::toc
+<!--toc:start-->
+- [Create your ENV schema](#create-your-env-schema)
+- [Conclusions](#conclusions)
+<!--toc:end-->
+::
+
+If you ever worked with environment variables in a TypeScript project you probably know that it can be a little bit annoying to handle them.
+
+For example, how many times you had to write something like this?
+
+```typescript
+const PORT = process.env.PORT as string
+```
+
+In fact every time you access an environment variable you have to cast it to the correct type, else the Typescript language server will output an error. The reason why this happens is that environment variables are inferred by Typescript as a union between `string` and `undefined`.
+And that actually makes sense because Typescript doesn't know if that variable exists in your **.env** file.
+
+Casting env variables as `string` everywhere in your codebase is not only **error-prone** but *it also makes your code harder to read and maintain*, especially when having lot of environment variables.
+
+But this is not the only reason why environment variables can be troublesome, you also have to make sure that they are set up correctly. If you forget to set an environment variable on your `.env` file your application will crash. It's really important to validate all of your environment variables *before* using them.
+
+This is where **Zod** comes in. Zod is a *TypeScript-first schema declaration and validation library*. Among other things, it allows you to define types for your env variables and parse them from the environment in a few steps. Let's see how it works.
+
+### Create your ENV schema
+
+You can start by installing Zod with this command:
+```bash
+npm install zod
+```
+
+and creating a new file called `env.ts` inside the root of your project. This file will essentially contain the schema for your environment variables.
+
+Inside `env.ts`, you can define your schema like this:
+
+```typescript
+import { z } from 'zod'
+
+const envClientSchema = zod.object({
+  APP_URL: zod.string().url(),
+  NEXT_PUBLIC_SANITY_PROJECT_ID: zod.string(),
+  NEXT_PUBLIC_SANITY_DATASET: zod.string(),
+  NEXT_PUBLIC_SANITY_API_VERSION: zod.string(),
+})
+```
+
+Here `zod.string()` means that the variable type needs to be a string. By using `zod.string().url()` you can be a little bit more specific and say that `APP_URL` should not only be a string, but it should also have a **URL** structure. Keep in mind that even if you use `zod.string().url()` the variable will still be inferred as `string` by Typescript.
+
+You can differentiate client and server environment variables by creating two different schemas. In this case, we are defining `envClientSchema` for client, if you need you can also add another schema called `envServerSchema` for server.
+
+Once you've done that, you need to parse the env variables by using Zod `parse` method:
+
+```typescript
+const parsedEnvClientSchema = envClientSchema.parse({
+  APP_URL: process.env.APP_URL,
+  NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  NEXT_PUBLIC_SANITY_API_VERSION: process.env.NEXT_PUBLIC_SANITY_API_VERSION,
+})
+```
+
+This will throw an error if any of the environment variables are missing in your `.env` file or if they don't match the Zod type assigned in the schema.
+
+Once you've parsed the environment variables you can export your schema:
+
+```typescript
+export const ENV = parsedEnvClientSchema
+```
+
+Finally you can use your environment variables inside the application like this:
+
+```typescript
+import { ENV } from '@/env'
+
+const url = ENV.APP_URL
+```
+
+A couple of things to note:
+- now you get autocomplete suggestions when using the `ENV` object
+- type of `url` is correctly inferred as `string`
+
+### Conclusions
+Typing and parsing env variables with Zod can be really useful and it's quite easy, but that's only one reason why Zod is an awesome library. There are a lot more cool things you can do with it, so make sure to check this blog often because I'm going to write about it more in the future.

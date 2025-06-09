@@ -1,0 +1,37 @@
+---
+title: "How this website is made"
+date: "2023-01-15"
+tags: "coding, next, typescript, tailwind, sanity"
+description: "I wanted to write a few words about how this website is made and why I chose to do it this way."
+cover: "/how-this-website-is-made.jpg"
+alt: "Code on a screen"
+---
+
+::toc
+<!--toc:start-->
+- [Is Next App Router good?](#is-next-app-router-good)
+<!--toc:end-->
+::
+
+As a fullstack developer I spend a lot of time working with Next, React and Typescript.
+
+I also have been using Sanity as a headless CMS for a while now and I really like it. It is easy to use and I think it has a great developer experience.
+In fact almost all of this website content is served from Sanity, exception made for the blog posts. I know what you are thinking, why not use Sanity for the blog posts as well? It is a CMS after all, right?
+
+Well, I did that because all posts are written in markdown and I wanted to keep it that way. I like markdown and I think it is a great way to write content. I also like the idea of having all my content in a git repository. I can easily edit it, I can easily move it to another platform if I want to and I can easily share it with others.
+
+Does Next support markdown out of the box? Well, let's say it wasn't a breeze to work with. I had to write a lot of code to make it work the way I wanted, but I'm pretty satisfied with the result and I think I will soon publish a guide on how to do it properly (especially since I haven't found a good one updated with Next *App Router* changes).
+
+Another reason why I didn't use Sanity or another CMS for this is because I really enjoy writing markdown inside *NeoVim* (or sometimes *Helix*) and I wanted to keep doing that.
+
+### Is Next App Router good?
+
+Yes and not. I like that React **server components** are able to fetch data from the server and I think this makes them really flexible... but maybe too much. What I mean is that before App Router we used to rely on *getStaticProps* and *getServerSideProps* for all serverside requests, while now the framework seems a little bit too opinionated about it.
+
+This means that if you're not a *solo*-developer you and your team need to adopt a really robust approach or things can become messy pretty fast and you will have a hard time figuring out where the data is coming from.
+
+Another thing that I like is the better separation between server and client side. By default all components runs on the server and if you want to perform some client operation you write *'use client'* on top of the file and this feels way more declarative. Debugger is also pretty good and able to detect if you're mixing server and client code and it's easier to avoid nasty *hydrations errors*.
+
+The new Layout instead could be a little bit confusing at first, especially for beginners. The main idea is that you can have a *base* Layout that wraps the entire app and then you can overwrite it when needed for specific routes.
+
+But yeah, overall it's been a good experience until now and working with it feels pretty fun.

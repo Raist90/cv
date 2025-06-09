@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -6,6 +8,36 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/icon",
   ],
+  components: false,
+  imports: {
+    scan: false,
+  },
   devtools: { enabled: false },
+  css: ["~/assets/css/main.css"],
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: "github-dark-high-contrast",
+        },
+        toc: {
+          depth: 3,
+        },
+      },
+    },
+    watch: {
+      port: 4000,
+      showURL: true,
+    },
+  },
+  runtimeConfig: {
+    public: {
+      baseURL: "http://localhost:3000",
+      locale: "en",
+    },
+  },
   compatibilityDate: "2025-05-15",
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

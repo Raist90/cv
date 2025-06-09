@@ -1,0 +1,11 @@
+{
+  "banner": {
+    "authorName": "Manuel De Toma",
+    "authorRole": "Senion fullstack developer",
+    "authorDescription": "I am an experienced web developer interested in projects that require both creative and analytical thinking."
+  },
+  "blog": {
+    "latestPosts": "Latest posts",
+    "postNotFound": "Post not found"
+  }
+}
