@@ -1,0 +1,92 @@
+{
+  "experiences": [
+    {
+      "name": "WeRoad",
+      "role": "Senior Frontend Developer",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "description": "Work in progress!",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Typescript",
+        "Vue",
+        "Vitest",
+        "Nuxt",
+        "Urql",
+        "Tailwind",
+        "Git",
+        "Zod"
+      ]
+    },
+    {
+      "name": "NoA Ignite",
+      "role": "Senior Fullstack Developer",
+      "startDate": "2023-01",
+      "endDate": "2024-09",
+      "description": "Among other things I built and mantained B2C and B2B ecommerces solutions with lot of different technologies. I also worked on a few internal tools and projects and mentored junior developers.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Typescript",
+        "React",
+        "Next",
+        "Tailwind",
+        "Sass",
+        "MySQL",
+        "WordPress",
+        "Git",
+        "Zod",
+        "Trpc",
+        "Storybook",
+        "Playwright",
+        "Jest"
+      ]
+    },
+    {
+      "name": "I Sarti del Web",
+      "role": "Senior Fullstack Developer",
+      "startDate": "2018-05",
+      "endDate": "2022-12",
+      "description": "I realized 50+ websites and landing pages with various technologies and built several marketing automations and campaigns. I have participated in project meetings with technical staff members, business analysts and external stakeholders.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Typescript",
+        "React",
+        "Next",
+        "Tailwind",
+        "Sass",
+        "PHP",
+        "MySQL",
+        "WordPress",
+        "WooCommerce",
+        "Shopify",
+        "Git",
+        "Gatsby",
+        "GraphQL"
+      ]
+    },
+    {
+      "name": "UpBrain",
+      "role": "Frontend Developer",
+      "startDate": "2016-02",
+      "endDate": "2018-04",
+      "description": "Here I moved my first steps as a Frontend developer. I have designed, prototyped and developed websites using HTML, CSS and a variety of Javascript and CSS libraries and preprocessors. I have extensively collaborated with Backend developers and UX designers.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "Bootstrap",
+        "Sass",
+        "Less",
+        "Git",
+        "WordPress"
+      ]
+    }
+  ]
+}

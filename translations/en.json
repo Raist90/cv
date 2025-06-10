@@ -1,11 +1,15 @@
 {
   "banner": {
     "authorName": "Manuel De Toma",
-    "authorRole": "Senion fullstack developer",
+    "authorRole": "Senior fullstack developer",
     "authorDescription": "I am an experienced web developer interested in projects that require both creative and analytical thinking."
   },
   "blog": {
     "latestPosts": "Latest posts",
     "postNotFound": "Post not found"
+  },
+  "experience": {
+    "title": "Work experience",
+    "description": "I have worked on various projects, ranging from small websites to large applications, utilizing a wide range of technologies."
   }
 }

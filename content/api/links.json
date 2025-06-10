@@ -1,16 +1,12 @@
 {
- "links": [
-   {
-     "label": "Home",
-     "href": "/"
-   },
-   {
-     "label": "About",
-     "href": "/"
-   },
-   {
-     "label": "Blog",
-     "href": "/"
-   }
- ]
+  "links": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/"
+    }
+  ]
 }

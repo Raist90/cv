@@ -25,5 +25,21 @@ export default defineContentConfig({
         ),
       }),
     }),
+    experience: defineCollection({
+      type: "data",
+      source: "api/experiences.json",
+      schema: z.object({
+        experiences: z.array(
+          z.object({
+            name: z.string(),
+            role: z.string(),
+            startDate: z.string(),
+            endDate: z.string().url(),
+            description: z.string(),
+            technologies: z.array(z.string()),
+          }),
+        ),
+      }),
+    }),
   },
 });

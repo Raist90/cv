@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import Banner from "~/components/Banner.vue";
+import ExperienceList from "~/components/ExperienceList.vue";
 import PostCard from "~/components/PostCard.vue";
 import PostList from "~/components/PostList.vue";
 import { usePosts } from "~/composables/usePosts";
 import { type Locale, useTranslation } from "~/composables/useTranslation";
+import { useExperiences } from "~/composables/useExperiences";
 
+const experiences = await useExperiences();
 const posts = await usePosts();
 
 // useSeoMeta({
@@ -19,6 +22,8 @@ const { t } = await useTranslation(locale as Locale);
 <template>
   <div class="space-y-12">
     <Banner />
+
+    <ExperienceList :experiences />
 
     <PostList
       :title="t('blog.latestPosts')"
