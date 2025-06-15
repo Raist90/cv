@@ -15,20 +15,31 @@ const { t } = await useTranslation(locale as Locale);
 
 <template>
   <article class="space-y-8">
-    <header class="space-y-4">
-      <div class="aspect-video w-full">
-        <img
-          v-if="post?.cover"
-          class="size-full object-cover"
-          :src="post.cover"
-          :alt="post.alt"
-        >
-      </div>
-
+    <header
+      v-if="post"
+      class="space-y-2"
+    >
       <h1
         class="font-bold text-2xl uppercase"
-        v-text="post?.title"
+        v-text="post.title"
       />
+
+      <p class="text-sm">
+        <NuxtTime
+          :datetime="post.date"
+          month="short"
+          year="2-digit"
+          locale="en"
+        />
+        with tags
+
+        <span
+          v-for="tag in post.tags"
+          :key="tag"
+          class="text-blue-300"
+          v-text="tag"
+        />
+      </p>
     </header>
 
     <ContentRenderer

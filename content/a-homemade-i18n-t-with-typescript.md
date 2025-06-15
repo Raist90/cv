@@ -8,16 +8,12 @@ alt: 'A code editor with TypeScript code'
 ---
 
 ::toc
-
-
 <!--toc:start-->
 - [The why](#the-why)
 - [The execution](#the-execution)
 - [The t function](#the-t-function)
 - [Conclusions](#conclusions)
 <!--toc:end-->
-
-
 ::
 
 ### The why
