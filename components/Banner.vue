@@ -14,17 +14,21 @@ const { t } = await useTranslation(locale as Locale);
         v-text="t('banner.authorName')"
       />
 
-      <div class="space-y-2">
-        <p
-          class="font-semibold uppercase text-xs italic -rotate-1 text-blue-300"
-          v-text="t('banner.authorRole')"
-        />
+      <p
+        class="font-semibold uppercase text-xs italic -rotate-1 text-blue-300"
+        v-text="t('banner.authorRole')"
+      />
 
+      <div>
         <p
           class="mt-1"
           v-text="t('banner.authorDescription')"
         />
       </div>
+      <p
+        class="text-sm"
+        v-text="t('banner.authorAdditionalInfo', { date: String(new Date().getFullYear() - 1990) })"
+      />
     </header>
 
     <div class="w-11/12 md:w-50 shrink-0 place-self-end">

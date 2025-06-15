@@ -2,7 +2,8 @@
   "banner": {
     "authorName": "Manuel De Toma",
     "authorRole": "Senior fullstack developer",
-    "authorDescription": "I am an experienced web developer interested in projects that require both creative and analytical thinking."
+    "authorDescription": "I am an experienced web developer interested in projects that require both creative and analytical thinking.",
+    "authorAdditionalInfo": "Born in Italy {date} years ago. I speak italian, english and spanish"
   },
   "blog": {
     "latestPosts": "Latest posts",
