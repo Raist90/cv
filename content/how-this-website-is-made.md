@@ -3,8 +3,7 @@ title: "How this website is made"
 date: "2023-01-15"
 tags: "coding, next, typescript, tailwind, sanity"
 description: "I wanted to write a few words about how this website is made and why I chose to do it this way."
-cover: "/how-this-website-is-made.jpg"
-alt: "Code on a screen"
+alt: "How this website is made"
 ---
 
 ::toc

@@ -1,10 +1,9 @@
 ---
-title: 'A simple i18n t function with TypeScript'
-date: '2025-06-10'
-tags: 'coding, typescript, i18n'
-description: 'Simple guide about creating a custom i18n t function with just TypeScript and some json files.'
-cover: '/simple-i18n-t-function-with-typescript.png'
-alt: 'A code editor with TypeScript code'
+title: "A simple i18n t function with TypeScript"
+date: "2025-06-10"
+tags: "coding, typescript, i18n"
+description: "Simple guide about creating a custom i18n t function with just TypeScript and some json files."
+alt: "A simple i18n t function with TypeScript"
 ---
 
 ::toc

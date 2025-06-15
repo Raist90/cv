@@ -1,10 +1,9 @@
 ---
-title: 'Type and parse your environment variables with Zod'
-date: '2023-03-19'
-tags: 'coding, next, typescript, zod'
-description: 'If you ever worked with environment variables in a TypeScript project, you probably know that it can be a bit of a pain to handle them.'
-cover: '/type-and-parse-your-environment-variables-with-zod.webp'
-alt: 'Code on a screen'
+title: "Type and parse your environment variables with Zod"
+date: "2023-03-19"
+tags: "coding, next, typescript, zod"
+description: "If you ever worked with environment variables in a TypeScript project, you probably know that it can be a bit of a pain to handle them."
+alt: "Type and parse your environment variables with Zod"
 ---
 
 ::toc

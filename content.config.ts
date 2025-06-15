@@ -9,7 +9,6 @@ export default defineContentConfig({
         title: z.string(),
         date: z.string(),
         tags: z.array(z.string()),
-        cover: z.string(),
         alt: z.string(),
       }),
     }),

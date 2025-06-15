@@ -3,8 +3,7 @@ title: "What is this blog about"
 date: "2023-01-14"
 tags: "coding, blogging"
 description: "This blog is about my journey as a developer. I will write about the things I learn, the things I build and the things I think about."
-cover: "/what-is-this-blog-about.webp"
-alt: "Code on a screen"
+alt: "What is this blog about"
 ---
 This blog is about my journey as a developer. I will write about the things I learn, the things I build and the things I think about. 
 
