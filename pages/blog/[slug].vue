@@ -28,7 +28,7 @@ const { t } = await useTranslation(locale as Locale);
         <NuxtTime
           :datetime="post.date"
           month="short"
-          year="2-digit"
+          year="numeric"
           locale="en"
         />
         with tags
