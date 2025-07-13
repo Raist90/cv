@@ -36,7 +36,7 @@ defineProps<Props>();
     <p v-text="experience.description" />
 
     <p
-      class="-ml-5 uppercase text-xs font-semibold mt-2 p-2 border border-stone-700 inline-block bg-stone-950"
+      class="-ml-5 uppercase text-xs font-semibold mt-4 p-2 border border-stone-700 inline-block bg-stone-950"
       v-text="experience.role"
     />
   </article>

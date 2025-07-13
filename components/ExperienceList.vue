@@ -25,14 +25,15 @@ const sectionId = useId();
 
     <ul class="space-y-8 pb-8 border-l border-dashed border-stone-700">
       <li
-        v-for="experience in experiences"
+        v-for="(experience, index) in experiences"
         :key="experience.name"
         class="list-none"
       >
         <div class="flex flex-row gap-x-2 space-y-2">
           <div
             aria-hidden
-            class="-ml-1 size-2 rounded-full shrink-0 inline-block bg-blue-300"
+            class="-ml-1 size-2 rounded-full shrink-0 inline-block"
+            :class="[index === 0 ? 'bg-blue-300' : 'bg-white']"
           />
 
           <slot
