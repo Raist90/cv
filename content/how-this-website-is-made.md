@@ -6,6 +6,10 @@ description: "I wanted to write a few words about how this website is made and w
 alt: "How this website is made"
 ---
 
+::Warning
+This post is pretty old and this website has been completely rewritten in Nuxt since then. I will soon write a new post about it, so stay tuned!
+::
+
 ::toc
 <!--toc:start-->
 - [Is Next App Router good?](#is-next-app-router-good)
