@@ -8,14 +8,14 @@ const { t } = await useTranslation(locale as Locale);
 
 <template>
   <section class="flex flex-col-reverse gap-y-4 md:flex-row gap-x-8">
-    <header class="space-y-2">
+    <header class="space-y-1">
       <h1
         class="font-bold text-3xl text-balance"
         v-text="t('banner.authorName')"
       />
 
       <p
-        class="font-semibold uppercase text-xs italic -rotate-1 text-blue-300"
+        class="font-semibold uppercase text-sm text-blue-300"
         v-text="t('banner.authorRole')"
       />
 

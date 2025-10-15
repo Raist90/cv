@@ -21,4 +21,8 @@
   pre {
     @apply my-2.5 overflow-x-auto block p-4 text-sm bg-stone-800;
   }
+
+  p a {
+    @apply text-blue-300 underline;
+  }
 }

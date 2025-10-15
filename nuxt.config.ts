@@ -40,4 +40,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  fonts: {
+    defaults: {
+      weights: ["400", "600", "700"],
+      styles: ["italic", "normal"],
+    },
+  },
 });
