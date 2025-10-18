@@ -12,7 +12,7 @@ const { t } = await useTranslation(locale as Locale);
 
 <template>
   <PostList
-    :title="t('blog.latestPosts')"
+    :title="t('blog.allPosts')"
     :posts
   >
     <template #post="{ post }">

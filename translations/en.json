@@ -6,6 +6,7 @@
     "authorAdditionalInfo": "Born in Italy {date} years ago. I speak italian, english and spanish"
   },
   "blog": {
+    "allPosts": "All posts",
     "latestPosts": "Latest posts",
     "postNotFound": "Post not found"
   },
