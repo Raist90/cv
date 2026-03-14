@@ -10,11 +10,11 @@ const { t } = await useTranslation(locale as Locale);
   <section class="flex flex-col-reverse gap-y-4 md:flex-row gap-x-8">
     <header class="space-y-1">
       <h1
-        class="font-bold text-3xl text-balance"
+        class="font-bold text-3xl text-balance mb-3"
         v-text="t('banner.authorName')"
       />
       <p
-        class="font-semibold uppercase text-sm text-blue-300"
+        class="font-semibold uppercase text-sm text-blue-300 mb-2"
         v-text="t('banner.authorRole')"
       />
       <div class="space-y-2">

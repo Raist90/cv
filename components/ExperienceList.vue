@@ -15,27 +15,20 @@ const sectionId = useId();
 <template>
   <section
     :aria-labelledby="sectionId"
-    class="space-y-4"
   >
     <h2
       :id="sectionId"
-      class="font-bold text-2xl"
+      class="font-bold text-2xl mb-6"
       v-text="t('experience.title')"
     />
 
-    <ul class="space-y-8 pb-8 border-l border-dashed border-stone-700">
+    <ul class="space-y-8 pb-8 border-stone-700">
       <li
-        v-for="(experience, index) in experiences"
+        v-for="experience in experiences"
         :key="experience.name"
         class="list-none"
       >
         <div class="flex flex-row gap-x-2 space-y-2">
-          <div
-            aria-hidden
-            class="-ml-1 size-2 rounded-full shrink-0 inline-block"
-            :class="[index === 0 ? 'bg-blue-300' : 'bg-white']"
-          />
-
           <slot
             name="experience"
             :experience

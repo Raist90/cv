@@ -9,16 +9,21 @@ defineProps<Props>();
 
 <template>
   <article
-    class="w-full ml-2 bg-stone-900 px-4 pb-2 pt-3 bg-linear-to-r from-stone-900 to-stone-800"
+    class="w-full bg-stone-900 px-5 pb-5 pt-4 bg-linear-to-r from-stone-900 to-stone-800 rounded-xl border border-stone-700"
   >
-    <h3
-      class="font-bold text-lg"
-      v-text="experience.name"
-    />
+    <h3>
+      <span v-text="`${experience.role}, `" />
+      <span
+        class="text-blue-300"
+        v-text="experience.name"
+      />
+    </h3>
 
-    <div class="flex gap-x-1 items-center text-sm">
+    <hr class="mt-2 mb-4 border-zinc-700" />
+
+    <div class="flex gap-x-1 items-center mb-2 text-xs">
       <p
-        class="text-gray-300"
+        class="text-zinc-200"
         v-text="experience.startDate"
       />
 
@@ -28,26 +33,28 @@ defineProps<Props>();
       />
 
       <p
-        :class="[experience.endDate === 'Present' ? 'text-blue-300' : 'text-gray-300']"
+        :class="[experience.endDate === 'Present' ? 'font-bold text-blue-300' : 'text-zinc-200']"
         v-text="experience.endDate"
       />
     </div>
 
-    <p v-text="experience.description" />
+    <p
+      class="text-sm"
+      v-text="experience.description"
+    />
 
-    <ul class="text-sm space-y-2 mt-2 pl-2">
+    <ul class="text-sm space-y-1 mt-2">
       <li
         v-for="(item, index) in experience.achievements"
         :key="index"
-        class="list-disc list-inside"
-        v-text="item"
+        class="list-none"
       >
+        <span
+          class="text-green-500"
+          v-text="'&check; '"
+        />
+        <span v-text="item" />
       </li>
     </ul>
-
-    <p
-      class="-ml-5 uppercase text-xs font-semibold mt-4 p-2 border border-stone-700 inline-block bg-stone-950"
-      v-text="experience.role"
-    />
   </article>
 </template>

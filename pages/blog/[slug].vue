@@ -24,7 +24,9 @@ const { t } = await useTranslation(locale as Locale);
         v-text="post.title"
       />
 
-      <p class="text-sm">
+      <p
+        class="text-xs text-zinc-200 uppercase"
+      >
         <NuxtTime
           :datetime="post.date"
           month="short"

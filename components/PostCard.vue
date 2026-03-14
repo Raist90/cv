@@ -26,7 +26,9 @@ defineProps<Props>();
         />
       </div>
 
-      <p class="text-sm">
+      <p
+        class="text-xs text-zinc-200 uppercase"
+      >
         <NuxtTime
           :datetime="post.date"
           month="short"
