@@ -43,7 +43,7 @@ defineProps<Props>();
       v-text="experience.description"
     />
 
-    <ul class="text-sm space-y-1 mt-2">
+    <ul class="text-xs space-y-1 mt-2">
       <li
         v-for="(item, index) in experience.achievements"
         :key="index"
