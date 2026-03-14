@@ -35,6 +35,16 @@ defineProps<Props>();
 
     <p v-text="experience.description" />
 
+    <ul class="text-sm space-y-2 mt-2 pl-2">
+      <li
+        v-for="(item, index) in experience.achievements"
+        :key="index"
+        class="list-disc list-inside"
+        v-text="item"
+      >
+      </li>
+    </ul>
+
     <p
       class="-ml-5 uppercase text-xs font-semibold mt-4 p-2 border border-stone-700 inline-block bg-stone-950"
       v-text="experience.role"

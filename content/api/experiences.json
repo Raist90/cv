@@ -2,10 +2,10 @@
   "experiences": [
     {
       "name": "WeRoad",
-      "role": "Senior Frontend Developer",
+      "role": "Senior Fullstack Developer",
       "startDate": "2024-09",
       "endDate": "Present",
-      "description": "Work in progress!",
+      "description": "Driving the end-to-end development of innovative web applications and internal tools in a high-energy environment. Leading the design and oversight of robust GraphQL and REST APIs, while building engaging, user-centric front-end interfaces to deliver scalable, business-critical solutions.",
       "technologies": [
         "HTML",
         "CSS",
@@ -18,6 +18,11 @@
         "Tailwind",
         "Git",
         "Zod"
+      ],
+      "achievements": [
+        "Collaborated with product and design teams to enhance user engagement, leading to increased revenue.",
+        "Improved code reliability and reduced production bugs by developing integration and end-to-end testing with Vitest and Playwright.",
+        "Enhanced developer and user experience by migrating legacy projects to the latest versions of Nuxt and Tailwind."
       ]
     },
     {
@@ -25,7 +30,12 @@
       "role": "Senior Fullstack Developer",
       "startDate": "2023-01",
       "endDate": "2024-09",
-      "description": "Among other things I built and mantained B2C and B2B ecommerces solutions with lot of different technologies. I also worked on a few internal tools and projects and mentored junior developers.",
+      "description": "Led the development and maintenance of B2C and B2B e-commerce solutions using a diverse range of frontend technologies. Delivered high-quality user experiences, contributed to internal tools and projects, and mentored junior developers to foster team growth.",
+      "achievements": [
+        "Improved e-commerce user experience with UI/UX enhancements.",
+        "Designed and implemented a monorepo for 6 e-commerce sites, enhancing deployment efficiency.",
+        "Provided mentorship to junior developers to foster their development and team collaboration."
+      ],
       "technologies": [
         "HTML",
         "CSS",
@@ -50,7 +60,7 @@
       "role": "Senior Fullstack Developer",
       "startDate": "2018-05",
       "endDate": "2022-12",
-      "description": "I realized 50+ websites and landing pages with various technologies and built several marketing automations and campaigns. I have participated in project meetings with technical staff members, business analysts and external stakeholders.",
+      "description": "Designed and delivered a wide range of websites and landing pages using diverse technologies, while developing marketing automations and campaigns to support business objectives. Collaborated with technical teams, business analysts, and external stakeholders to ensure successful project outcomes across the full development stack.",
       "technologies": [
         "HTML",
         "CSS",
@@ -68,6 +78,11 @@
         "Git",
         "Gatsby",
         "GraphQL"
+      ],
+      "achievements": [
+        "Successfully completed various client projects within specified timelines, leading to high customer satisfaction.",
+        "Created marketing automations to facilitate business expansion.",
+        "Upgraded outdated websites to contemporary technologies, optimizing upkeep and progress."
       ]
     },
     {
@@ -75,7 +90,7 @@
       "role": "Frontend Developer",
       "startDate": "2016-02",
       "endDate": "2018-04",
-      "description": "Here I moved my first steps as a Frontend developer. I have designed, prototyped and developed websites using HTML, CSS and a variety of Javascript and CSS libraries and preprocessors. I have extensively collaborated with Backend developers and UX designers.",
+      "description": "Launched my career as a Frontend Developer by designing, prototyping, and building websites with HTML, CSS, and various JavaScript and CSS libraries and preprocessors. Collaborated closely with Backend developers and UX designers to deliver engaging digital experiences.",
       "technologies": [
         "HTML",
         "CSS",
@@ -86,6 +101,11 @@
         "Less",
         "Git",
         "WordPress"
+      ],
+      "achievements": [
+        "Built and launched multiple responsive websites for diverse clients.",
+        "Collaborated with UX designers to enhance user engagement.",
+        "Streamlined front-end workflows to improve development efficiency."
       ]
     }
   ]

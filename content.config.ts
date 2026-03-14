@@ -36,6 +36,7 @@ export default defineContentConfig({
             endDate: z.string().url(),
             description: z.string(),
             technologies: z.array(z.string()),
+            achievements: z.array(z.string()),
           }),
         ),
       }),

@@ -2,8 +2,9 @@
   "banner": {
     "authorName": "Manuel De Toma",
     "authorRole": "Senior fullstack developer",
-    "authorDescription": "I am an experienced web developer interested in projects that require both creative and analytical thinking.",
-    "authorAdditionalInfo": "Born in Italy {date} years ago. I speak italian, english and spanish"
+    "authorDescription": "Experienced fullstack web developer passionate about building impactful digital solutions that blend creativity with analytical problem-solving.",
+    "authorAdditionalInfo": "Born in Italy {date} years ago. Fluent in Italian, English, and Spanish, I thrive in multicultural and collaborative environments.",
+    "authorSkills": "Proficient in TypeScript, Go, and Lua, with experience across the full web development stack."
   },
   "blog": {
     "allPosts": "All posts",

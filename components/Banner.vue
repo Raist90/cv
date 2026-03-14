@@ -13,22 +13,15 @@ const { t } = await useTranslation(locale as Locale);
         class="font-bold text-3xl text-balance"
         v-text="t('banner.authorName')"
       />
-
       <p
         class="font-semibold uppercase text-sm text-blue-300"
         v-text="t('banner.authorRole')"
       />
-
-      <div>
-        <p
-          class="mt-1"
-          v-text="t('banner.authorDescription')"
-        />
+      <div class="space-y-2">
+        <p v-text="t('banner.authorDescription')" />
+        <p v-text="t('banner.authorAdditionalInfo', { date: String(new Date().getFullYear() - 1990) })" />
+        <p v-text="t('banner.authorSkills')" />
       </div>
-      <p
-        class="text-sm"
-        v-text="t('banner.authorAdditionalInfo', { date: String(new Date().getFullYear() - 1990) })"
-      />
     </header>
 
     <div class="w-11/12 md:w-50 shrink-0 place-self-end">
