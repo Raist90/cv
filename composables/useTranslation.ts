@@ -41,7 +41,7 @@ export async function useTranslation(locale: Locale) {
     const matches = current.match(/{[a-zA-Z_]+}/g) || [];
     for (const match of matches) {
       const placeholder = match.slice(1, -1); // Remove { and }
-      if (placeholder in replacements) {
+      if (placeholder in replacements && typeof replacements[placeholder] === "string") {
         current = current.replace(match, replacements[placeholder]);
       }
       else {
