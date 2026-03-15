@@ -25,7 +25,7 @@ const { t } = await useTranslation(locale as Locale);
       />
 
       <p
-        class="text-xs text-zinc-200 uppercase"
+        class="text-xs text-zinc-300 uppercase"
       >
         <NuxtTime
           :datetime="post.date"
@@ -46,7 +46,7 @@ const { t } = await useTranslation(locale as Locale);
 
     <ContentRenderer
       v-if="post"
-      class="[&>p]:mt-2 [&>h3]:text-lg [&>h3]:font-bold [&>h3]:mt-4"
+      class="[&>p]:mt-2 [&>p]:text-zinc-300 [&>h3]:text-lg [&>h3]:font-bold [&>h3]:mt-4"
       :value="post"
     />
     <div

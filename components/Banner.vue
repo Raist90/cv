@@ -14,10 +14,10 @@ const { t } = await useTranslation(locale as Locale);
         v-text="t('banner.authorName')"
       />
       <p
-        class="font-semibold uppercase text-sm text-blue-300 mb-2"
+        class="font-bold uppercase text-sm text-blue-300 mb-2"
         v-text="t('banner.authorRole')"
       />
-      <div class="space-y-2">
+      <div class="space-y-2 text-zinc-300">
         <p v-text="t('banner.authorDescription')" />
         <p v-text="t('banner.authorAdditionalInfo', { date: String(new Date().getFullYear() - 1990) })" />
         <p v-text="t('banner.authorSkills')" />

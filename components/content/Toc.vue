@@ -3,7 +3,7 @@
 
 <template>
   <div class="border mb-6 border-stone-700 max-w-xs">
-    <div class="border-b border-stone-700 py-2 pl-4">
+    <div class="border-b border-stone-700 py-2 pl-4 bg-stone-900">
       <p
         class="font-bold"
         v-text="'Table of contents'"

@@ -23,7 +23,7 @@ defineProps<Props>();
 
     <div class="flex gap-x-1 items-center mb-2 text-xs">
       <p
-        class="text-zinc-200"
+        class="text-zinc-300"
         v-text="experience.startDate"
       />
 
@@ -33,7 +33,7 @@ defineProps<Props>();
       />
 
       <p
-        :class="[experience.endDate === 'Present' ? 'font-bold text-blue-300' : 'text-zinc-200']"
+        :class="[experience.endDate === 'Present' ? 'font-bold text-blue-300' : 'text-zinc-300']"
         v-text="experience.endDate"
       />
     </div>
