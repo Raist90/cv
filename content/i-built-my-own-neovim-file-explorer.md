@@ -1,6 +1,6 @@
 ---
 title: "I built my own Neovim file explorer"
-date: "2026-28-03"
+date: "2026-03-28"
 tags: "coding, neovim, lua, file explorer"
 description: "A fun experiment about building a simple file explorer for Neovim using Lua. I wanted to see if I could create something simple and functional without relying on any external plugins."
 alt: "I built my own Neovim file explorer"
